@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jokempo</title>
+    <style>
+        *{
+            font-family: Helvetica;
+            font-weight: 400;
+        }
+
+        #title{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        #player-name{
+            text-align:left ;
+        }
+
+        #cpu-name{
+            text-align:right ;
+        }
+
+        #player-name, #cpu-name{
+            margin: 0;
+            padding: 0;
+        }
+
+        #player-score{
+            right: 20px;
+        }
+        #player-score, #cpu-score{
+            position: absolute;
+            top: 5px;
+            font-size: 40px;
+        }
+        #versus{
+            text-align: center;
+            font-size: 50px;
+            background-color: rgb(197, 185, 12);
+            width: 50px;
+        }
+        #score{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #player, #cpu{
+            position: relative;
+            flex-grow: 1;
+            border-radius: 5px;
+            width: 200px;
+            padding: 20px;
+            color: #fff;
+        }
+
+        #player{
+            background-color: blue;
+        }
+
+        #cpu{
+            background-color: red;
+        }
+
+        ul#player-choise, ul#cpu-choise{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul#player-choise li, ul#cpu-choise li{
+            display: inline;
+        }
+
+        ul#player-choise li a, ul#cpu-choise li a{
+            opacity: .2;        
+        }
+
+        ul#player-choise li a:hover{
+            opacity: 1;        
+        }
+
+        ul#player-choise li a ing, ul#cpu-choise li a ing{
+            max-width: 80px;
+        }
+
+        #messages{
+            background-color: gray;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 40px 0;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Jokempo</h1>
+        <div id="score">
+            <div id="player">
+                <h2 id="player-name">Gabriel</h2>
+                <span id="player-score">0</span>
+                <ul id="player-choise">
+                    <li><a id="player-choise-1"><img src="img/paper.png" width="200px"></a></li>
+                    <li><a id="player-choise-2"><img src="img/scissors.png" width="200px"></a></li>
+                    <li><a id="player-choise-3"><img src="img/stone.png" width="200px"></a></li>
+                </ul>
+            </div>
+        
+            <div id="versus">vs</div>
+
+            <div id="cpu">
+                <h2 id="cpu-name">CPU</h2>
+                <span id="cpu-score">0</span>
+                <ul id="cpu-choise">
+                    <li><a id="cpu-choise-1"><img src="img/paper.png" width="200px"></a></li>
+                    <li><a id="cpu-choise-2"><img src="img/scissors.png" width="200px"></a></li>
+                    <li><a id="cpu-choise-3"><img src="img/stone.png" width="200px"></a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <div id="messages">Messages</div>
+        
+    </div>
+</body>
+
+</html>
