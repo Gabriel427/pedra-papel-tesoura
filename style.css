@@ -1,0 +1,95 @@
+*{
+    font-family: Helvetica;
+    font-weight: 400;
+}
+
+#title{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#player-name{
+    text-align:left ;
+}
+
+#cpu-name{
+    text-align:right ;
+}
+
+#player-name, #cpu-name{
+    margin: 0;
+    padding: 0;
+}
+
+#player-score{
+    right: 20px;
+}
+#player-score, #cpu-score{
+    position: absolute;
+    top: 5px;
+    font-size: 40px;
+}
+#versus{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(197, 185, 12);
+    width: 50px;
+}
+
+#score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player, #cpu{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+}
+
+#player{
+    background-color: blue;
+}
+
+#cpu{
+    background-color: red;
+}
+
+ul#player-choise, ul#cpu-choise{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul#player-choise li, ul#cpu-choise li{
+    display: inline;
+}
+
+ul#player-choise li a, ul#cpu-choise li a {
+    opacity: .2;        
+}
+
+ul#player-choise li a:hover{
+    opacity: 1;        
+}
+
+ul#player-choise li a.selected, ul#cpu-choise li a.selected {
+    opacity: 1;
+}
+
+ul#player-choise li a ing, ul#cpu-choise li a ing{
+    max-width: 80px;
+}
+
+#messages{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px 0;
+    font-size: 40px;
+}
